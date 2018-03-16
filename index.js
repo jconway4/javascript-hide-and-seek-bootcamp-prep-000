@@ -15,26 +15,12 @@ var increaseRankBy = function(n) {
 };
 
 var deepestChild = function() {
-  var find = function(array, criteriaFN) {
-    let current = array;
-    let next = [];
-    
-    while (current) {
-      if (criteriaFN(current)) {
-        return current;
-      }
-      
-      if (Array.isArray(current)) {
-        for (let i = 0; i < current.length; i++) {
-          next.push(current[i]);
-        }
-      }
-    current = next.shift();
-    }
-    return null;
-  };
+  let lis = document.getElementById('grand-node').querySelectorAll('div');
+  let next = [];
   
-  return find (
-    document.getElementById('grand-node').querySelectorAll('div'),
-    function(){n => n > 5})
+  for (let i = 0; i < lis.length; i++) {
+    next.push(lis[i]);
+  }
+  
+  return next[next.length - 1];
 };
