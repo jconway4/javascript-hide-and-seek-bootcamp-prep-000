@@ -31,7 +31,6 @@ var deepestChild = function() {
       }
     current = next.shift();
     }
-    return null;
   };
   
   return find (
