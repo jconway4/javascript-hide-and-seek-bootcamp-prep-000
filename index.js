@@ -15,24 +15,26 @@ var increaseRankBy = function(n) {
 };
 
 var deepestChild = function() {
-  var find = function(array) {
-    let current = array;
-    let next = [];
-    
-    while (current) {
-      if (Array.isArray(current)) {
-        return current;
-      }
-      
-      if (Array.isArray(current)) {
-        for (let i = 0; i < current.length; i++) {
-          next.push(current[i]);
-        }
-      }
-    current = next.shift();
-    }
-  };
   
-  return find(document.getElementById('grand-node').querySelectorAll('div'));
+  
+  
+  
+  // var find = function(array) {
+  //   let current = array;
+  //   let next = [];
+    
+  //   while (current) {
+  //     if (Array.isArray(current)) {
+  //       return current;
+  //     }
+      
+  //     if (Array.isArray(current)) {
+  //       for (let i = 0; i < current.length; i++) {
+  //         next.push(current[i]);
+  //       }
+  //     }
+  //   current = next.shift();
+  //   }
+  // };
 
 };
