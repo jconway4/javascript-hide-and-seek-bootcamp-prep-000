@@ -24,22 +24,3 @@ var deepestChild = function() {
   
   return next[next.length - 1];
 };
-  
-  
-  // var find = function(array) {
-  //   let current = array;
-  //   let next = [];
-    
-  //   while (current) {
-  //     if (Array.isArray(current)) {
-  //       return current;
-  //     }
-      
-  //     if (Array.isArray(current)) {
-  //       for (let i = 0; i < current.length; i++) {
-  //         next.push(current[i]);
-  //       }
-  //     }
-  //   current = next.shift();
-  //   }
-  // };
