@@ -15,12 +15,12 @@ var increaseRankBy = function(n) {
 };
 
 var deepestChild = function() {
-  var find = function(array, criteriaFN) {
+  var find = function(array) {
     let current = array;
     let next = [];
     
     while (current) {
-      if (criteriaFN(current)) {
+      if (Array.isArray(current)) {
         return current;
       }
       
