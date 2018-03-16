@@ -33,6 +33,6 @@ var deepestChild = function() {
     }
   };
   
-  return find(document.getElementById('app').querySelectorAll('ul.ranked-list li'));
+  return find(document.getElementById('').querySelectorAll('ul.ranked-list li'));
 
 };
