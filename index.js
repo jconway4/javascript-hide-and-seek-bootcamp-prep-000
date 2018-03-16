@@ -32,5 +32,7 @@ var deepestChild = function() {
     current = next.shift();
     }
   };
+  
+  return find(document.getElementById('app').querySelectorAll('ul.ranked-list li'));
 
 };
