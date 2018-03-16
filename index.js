@@ -32,8 +32,5 @@ var deepestChild = function() {
     current = next.shift();
     }
   };
-  
-  return find (
-    document.getElementById('grand-node').querySelectorAll('div'),
-    function(){n => n > 5})
+
 };
