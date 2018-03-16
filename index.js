@@ -22,7 +22,6 @@ var deepestChild = function() {
 };
   
   
-  
   // var find = function(array) {
   //   let current = array;
   //   let next = [];
@@ -40,5 +39,3 @@ var deepestChild = function() {
   //   current = next.shift();
   //   }
   // };
-
-};
