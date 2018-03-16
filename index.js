@@ -22,7 +22,7 @@ var deepestChild = function() {
     next.push(lis[i]);
   }
   
-  return next;
+  return next[next.length];
 };
   
   
