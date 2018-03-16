@@ -20,11 +20,11 @@ var deepestChild = function() {
   
   while (lis) {
     if (Array.isArray(lis)) {
-      return lis
+      return lis;
     }
   }
   
-  return lis[0]
+  return lis[0];
   
   // var find = function(array) {
   //   let current = array;
